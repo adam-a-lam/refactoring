@@ -10,16 +10,29 @@ public class Invoice {
     private final String customer;
     private final List<Performance> performances;
 
-    public Invoice(String customer, List<Performance> performances) {
+    /**
+     * Creates a new invoice.
+     * @param customer the customer name
+     * @param performances the list of performances
+     */
+    public Invoice(final String customer, final List<Performance> performances) {
         this.customer = customer;
         this.performances = performances;
     }
 
-    public final String getCustomer() {
-        return customer;
+    /**
+     * Gets the customer name.
+     * @return the customer name
+     */
+    public String getCustomer() {
+        return this.customer;
     }
 
-    public final List<Performance> getPerformances() {
-        return performances;
+    /**
+     * Gets the list of performances.
+     * @return the performances
+     */
+    public List<Performance> getPerformances() {
+        return this.performances;
     }
 }
